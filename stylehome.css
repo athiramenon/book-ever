@@ -1,0 +1,38 @@
+.container{
+    padding: 50px;
+    background-color: black;
+}
+.options{
+    float: right;
+}
+
+.sellbtn{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.sellbtn:hover {
+    color: grey;
+  }
+  .buybtn{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.buybtn:hover {
+    color: grey;
+  }
+  .logbtn{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.logbtn:hover {
+    color: grey;
+  }
+.logo{
+    float: left;
+}

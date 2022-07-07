@@ -8,13 +8,13 @@ form {
     padding: 12px 20px;
     margin: 8px 0;
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     box-sizing: border-box;
   }
   
   /* Set a style for all buttons */
   button {
-    background-color: #04AA6D;
+    background-color: black;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
