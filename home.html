@@ -1,22 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
-    <link rel="stylesheet" href="stylehome.css" />
-  
-    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
-  </head>
-  <body>
-    <div class="container">
-      <img src="" alt="logo" class="logo" />
-      <div class="options">
-        <button type="button" class="sellbtn">Sell or Donate</button>
-        <button type="button" class="buybtn">Buy</button>
-        <button type="button" class="logbtn">Logout</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- ===CSS LINKS=== -->
+  <!-- reset -->
+  <link rel="stylesheet" href="stylehome.css">
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- main -->
+  <link rel="stylesheet" href="resethome.css">
+  <!-- ===JS LINKS=== -->
+  <!-- jquery Might need to READD THIS  -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- app -->
+  <script src="home.js"></script>
+  <title>home</title>
+</head>
+
+<body>
+  <div class="container1">
+    <header>
+      <div class="row">
+        <div class="col l12">
+
+          <div class="topnav">
+            <img src="./logo/logo1.jpg" alt="logo" width="60" height="70" />
+            <div class="options">
+              <button type="submit" class="home">
+                <a class="active" href="#home" style="text-decoration: none">Home</a>
+              </button>
+              <button type="submit" class="sell">
+                <a class="active" href="#sell" style="text-decoration: none"
+                  >Sell or Donate</a
+                >
+              </button>
+              <button type="submit" class="buy">
+                <a class="active" href="#buy" style="text-decoration: none">Buy</a>
+              </button>
+              <button type="submit" class="logout">
+                <a class="active" href="#logout" style="text-decoration: none"
+                  >Logout</a
+                >
+              </button>
+            </div>
+          </div>     
+        </div>
       </div>
-    </div>
-  </body>
+    </header>
+  <div class="container">
+    <main>
+      <div class="row">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Best Sellers</span>
+              <div id="best-sellers-container">
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="row">
+        <div class="col l6">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title">Search For Books</span>
+              <div id="search-form-container">
+                <form action="#" method="get" id="search-form">
+                  <div class="form-group">
+                    <label for="title-search">Enter A Title:</label>
+                    <input type="text" name="title-search-box" id="title-search" aria-describedby="titleHelp"
+                      placeholder="Enter title of book">
+                    <small class="helper-text" id="titleHelp">Please enter a book title that you
+                      wish to search for.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="author-search">Enter An Author:</label>
+                    <input type="text" name="author-search-box" id="author-search" aria-describedby="authorHelp"
+                      placeholder="Enter author name">
+                    <small class="helper-text" id="authorHelp">Please enter an author that you wish
+                      to search for.</small>
+                  </div>
+
+                  <button type="submit" class="form-button" id="submit-btn">Search</button>
+                  <button type="reset" class="form-button" id="reset-btn">Reset Fields</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l6">
+            <div class="card">
+              <div class="card-content white-text">
+                <span class="card-title">Your Results</span>
+
+                <div id="results-container">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div> <!-- ===FIREBASE SCRIPTS=== -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+</body>
+
 </html>
